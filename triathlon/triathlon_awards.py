@@ -1,12 +1,12 @@
 '''
-This code is part of the fourth task. (practical task 1)
+This code is part of a task.
 
 Pseudo code:
 
 - ask the participant to enter the time they took to run the 3 diferent events
 - calculate and store in a variable the total time taken of a person in the triathlon
 - display the total time taken
-- display which if they won any ward and display which one
+- display if they won any ward and display which one
 
 The times inserted by the user will be saved as integers numbers since it is calculated in minutes
 If a float is inserted, it will round the number to the nearest integer for example,
