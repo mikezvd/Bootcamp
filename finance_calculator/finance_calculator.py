@@ -19,7 +19,8 @@ Pseudo code:
 - if 'no' is entered then the program ends, otherwise, show main menu again
 
 '''
-
+def simple_calculation(deposit,interest,investing_years):
+    return deposit * (1 + interest * investing_years)
 
 menu = True
 
@@ -46,7 +47,7 @@ Enter either 'investment' or 'bond' from the menu above to proceed: ''').lower()
 
         if interest == "simple" :
             
-            a = deposit * (1 + r * investing_years)
+            a = simple_calculation(deposit,r,investing_years) # deposit * (1 + r * investing_years)
             print(f"After {investing_years} years investing with {interest_rate}% of interest rate, you would would have £{a:.2f}.\n")
 
         if interest == "compound" :
