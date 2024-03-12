@@ -20,6 +20,8 @@ Pseudo code:
 
 '''
 
+def bond_repayment_calc( interest, house_value, repaying_months) :
+    return (interest * house_value) / (1 - (1 + i)**(1 - (repaying_months + 1)))
 
 menu = True
 
@@ -66,7 +68,7 @@ Enter either 'investment' or 'bond' from the menu above to proceed: ''').lower()
 
         i = (interest_rate / 100) / 12
         
-        repayment = (i * house_value) / (1 - (1 + i)**(1 - (repaying_months + 1)))
+        repayment = bond_repayment_calc(i,house_value,repaying_months) #(i * house_value) / (1 - (1 + i)**(1 - (repaying_months + 1)))
 
         print(f"\nThe amount that you will have to repay on a home loan each month is £{repayment:.2f} for {repaying_months} months.")
 
